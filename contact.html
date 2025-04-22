@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style/style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="img/iconsite.png" type="image/png" sizes="32x32" alt="icoSite">
+        <title>David Goulette</title>
+        <style>
+            @font-face {
+                font-family: 'PoliceTitre';
+                src: url('fonts/Lovelo Black.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+    
+            h1, h2, h3 {
+                font-family: 'PoliceTitre', sans-serif;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠Accueil</a></li>
+                <li><a href="entreprise.html">🖥️Missions en entreprise </a></li>
+               <!-- <li><a href="#">🧶Projet fil rouge</a></li>-->
+               <li><a href="veille.html">🌙Veille</a></li>             
+                  <!--<li><a href="#">🎮Projets perso</a></li>-->
+                <li><a href="contact.html">👤Contact</a></li>
+                <li> <img src="img/excla23.png" alt="HTML logo" class="coney"></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="about-section">
+        <h1>Mes contacts</h1>
+     <p>📧 mail : thendo267@gmail.com</p>
+        <a href="https://www.linkedin.com/in/david-goulette-853644187/?originalSubdomain=fr">Linkedin</a>
+
+            
+        <!-- Reste du contenu -->
+</section><section>
+
+ <h1>Tableau de synthèse</h1>
+    <section class="download-section"></section>
+   
+        <button class= "button"onclick="downloadS()">📄Télécharger le tableau de synthèse</button>
+    </section>
+
+    <script>
+        function downloadS() {
+            const link = document.createElement('a');
+            link.href = 'E4.pdf'; // Remplacez par le chemin de votre fichier PDF
+            link.download = 'E4.pdf'; // Nom du fichier téléchargé
+            link.click();
+        }
+    </script>
+        
+        <h1>Tableau de synthèse</h1>
+    <section class="download-section"></section>
+   
+        <button class= "button"onclick="downloadPDF()">📄mon cv</button>
+    </section>
+
+    <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'CV-DavidG.pdf'; // Remplacez par le chemin de votre fichier PDF
+            link.download = 'CV-DavidG.pdf'; // Nom du fichier téléchargé
+            link.click();
+        }
+    </script>
+        
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="img/iconsite.png" type="image/png" sizes="32x32" alt="icoSite">
+    <title>David Goulette</title>
+    <style>
+        @font-face {
+            font-family: 'PoliceTitre';
+            src: url('fonts/Lovelo Black.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1, h2, h3 {
+            font-family: 'PoliceTitre', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inclure directement le contenu du header ici -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠Accueil</a></li>
+                <li><a href="entreprise.html">🖥️Missions en entreprise </a></li>
+               <!-- <li><a href="#">🧶Projet fil rouge</a></li>-->
+                <li><a href="veille.html">🌙Veille</a></li>
+                <!--<li><a href="#">🎮Projets perso</a></li>-->
+                <li><a href="contact.html">👤Contact</a></li>
+                <li> <img src="img/excla23.png" alt="HTML logo" class="coney"></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reste du contenu de la page index -->
+    <section class="about-section">
+        <h1>À propos de moi</h1>
+        <h2>Bienvenue sur mon portfolio !</h2>
+        <p class="descText">Je m'appelle David Goulette, j'ai 25 ans et je suis actuellement étudiant en BTS SIO option Slam.
+            je suis quelqu'un de créatif et très passionné</p>
+            
+        <!-- Reste du contenu -->
+
+        <p>Après m'être lancé dans le monde du développpement dans une écolde de jeu vidéo.
+            j'ai décidé de me réorienter vers le développement web afin d'acquérir de nouvelles compétences et afinner mes connaissances.
+        </p>
+        <img src="img/iconsite.png" alt="HTML logo" class="yoyoboysprite">
+
+
+    </section>
+
+    <section class="skills-section">
+        <h1>Compétences</h1>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Développement Web</h3>
+                <p>HTML, CSS, PHP, JavaScript</p>
+                <div class="logos">
+                    <img src="img/HTML.png" alt="HTML logo" class="logo">
+                    <img src="img/css.png" alt="CSS logo" class="logo">
+                    <img src="img/js.png" alt="JavaScript logo" class="logo">
+                    <img src="img/php.png" alt="JavaScript logo" class="logo">
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Game Design</h3>
+                <p>Unity, Game Design Document</p>
+                <img src="img/unity.png" alt="JavaScript logo" class="logoMid">
+                <img src="img/csharp.png" alt="" class="logoMid">
+            </div>
+        
+    </section>
+
+
+    <h1>Parcours et diplômes
+    </h1>
+        <div class="skill-card">
+
+   
+    <img src="img/scol.png" alt="" class="scol" onclick="openModal(this)">
+    </div>
+   <script>
+
+function openModal(image) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    modal.style.display = "block"; // Afficher la modale
+    modalImg.src = image.src; // L'image dans la modale est la même que l'image cliquée
+    captionText.innerHTML = image.alt; // Afficher le texte alternatif de l'image dans la modale
+}
+
+// Fermer la modale
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none"; // Cacher la modale
+}
+
+    </script>
+    
+    <!-- Modale pour visionner l'image en grand -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style/style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="img/iconsite.png" type="image/png" sizes="32x32" alt="icoSite">
+        <title>David Goulette</title>
+        <style>
+            @font-face {
+                font-family: 'PoliceTitre';
+                src: url('fonts/Lovelo Black.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+    
+            h1, h2, h3 {
+                font-family: 'PoliceTitre', sans-serif;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠Accueil</a></li>
+                <li><a href="entreprise.html">🖥️Missions en entreprise </a></li>
+               <!-- <li><a href="#">🧶Projet fil rouge</a></li>-->
+               <li><a href="veille.html">🌙Veille</a></li>                
+               <!--<li><a href="#">🎮Projets perso</a></li>-->
+                <li><a href="contact.html">👤Contact</a></li>
+                <li> <img src="img/excla23.png" alt="HTML logo" class="coney"></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="about-section">
+        <h1>Mon alternance</h1>
+     
+        <p class="descText">Je travaille actuellement au Point Info Jeunes de Carpentras (PIJ).
+        </p>
+
+        <p class="descText">Après avoir réalisé un Service Civique au PIJ, j'ai été recruté en tant que chargé de communcation Web du service.
+            Je suis responsable de la mise à jour du site internet du PIJ, ainsi que la présentation des différentes.
+            J'ai pour mission d'améliorer la présentation des pages, mettre à jours les informations et améliorer la navigation du site
+        </p>
+            
+        <!-- Reste du contenu -->
+
+        
+        <img src="img/pij.png" alt="HTML logo" class="logoBig">
+
+
+    </section>
+
+
+    <section class="skills-section">
+        <h1>Présentation du service</h1>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Description du service et ses activités</h3>
+                <p>Le PIJ est un service de la mairie de Carpentras.
+                    Il s'agit d'un lieu d'accueil, d'écoute et d'information pour les jeunes de 12 à 25 ans.
+                    Le PIJ propose des informations sur les thématiques suivantes : emploi, formation, logement, santé, loisirs, culture, mobilité internationale et vie quotidienne.
+                </p>
+               
+            </div>
+            
+        
+    </section>
+    
+    <h1>Mes tâches</h1>
+    <h2>Développer la présence en ligne de l'organisation</h2>
+    <section class="accordion-section">
+        <div class="accordion">
+            <h3> ▼ Mise en page </h3>
+        </div>
+        <div class="panel">
+            <div class="left">
+                <p class="=textDesc"> Lorsque le site du PIJ de Carpentras a été crée et mis en ligne. Personne n'a réellement continuer à le mettre à jour et à l'améliorer.</p>
+                <p class="=textDesc">pourtant, le site jouis d'une excellent référencement malgré. Mon travail est donc d'améliorer le design graphique des pages, leur présentation et mettre à jour les informations.  </p>
+                <p class="=textDesc">Pour cela, j'utilise le CMS Type, sur lequel a été constuit le site. Il me permet de gérer les pages, l'arboresance du site et leur présentation</p>
+                <a href="https://infojeunes.carpentras.fr/accueil.html">Le site du PIJ</a>
+            </div>
+            <div class="right">
+                <img src="img/pagebafa.png" alt="" class="panel-image"  onclick="openModal(this)">
+                <img src="img/typo.png" alt="Image PIJ" class="panel-image"  onclick="openModal(this)">
+
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <h3> ▼ Restructuration de l'arboresance du site</h3>
+        </div>
+        <div class="panel">
+            <div class="left">
+                <p>Après avoir réalisé des tests d'utilisation au prés quelques personnes de notre public. J'ai réalisé que la navigation sur le site n'était pas toujours aisé. c'est pourquoi j'ai totaltament repensé et remodeler la navigation sur le site dans un document de design. Malheureusement ce document est toujours en attente de validation.</p>
+            </div>
+            <div class="right">
+                <img src="img/nbarrenav.png" alt="Image service" class="panel-image"  onclick="openModal(this)">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skills-section">
+        <h1>La plateforme ADEL</h1>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Description du projet</h3>
+                <img src="img/adel-logo.png" alt="Image PIJ" class="logoMid"  onclick="openModal(this)">
+                <p class="=textDesc">ADEL est un projet sortant légèrement de mes missions habituel.</p>
+                <p class="=textDesc">Nous avons été contacté par une sociologue qui cherchais de l'aide pour lancer son projet ADEL.</p>
+                <p class="=textDesc">ADEL est un dispostif voulant aider et accompagner les personnes en demande de logement et d'emploi pour faciliter et rendre possible leurs recherches (trouver un emploi sans domicile est difficile et l'inverse est également vrai)</p>
+                <p class="=textDesc">Le PIJ soutenant cette action, je me suis proposé dans le cadre de mon BTS de créer le site de la plateforme ADEl</p>
+
+
+            </div>
+            </div>
+            <div class="skill-card">
+                <img src="img/accueilADel.png" alt="JavaScript logo" class="projet-image" onclick="openModal(this)">
+            </div>
+        
+    </section>
+
+    <h1>Organisation</h2>
+    <section class="skills-section">
+        <h1>Organisation Trello</h1>
+        <div class="skills-grid">
+            <div class="skill-card">
+              
+            <img src="img/trello adel.png" alt="HTML logo" class="projet-image" onclick="openModal(this)">
+            <img src="img/gestionbdd.png" alt="HTML logo" class="projet-image" onclick="openModal(this)">
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Wireframe</h3>
+              
+                <img src="img/wireframe.png" alt="JavaScript logo" class="projet-image" onclick="openModal(this)">
+                <img src="img/wireframe2.png" alt="JavaScript logo" class="projet-image" onclick="openModal(this)">
+            </div>
+            <div class="skill-card">
+                <h3>Documentation</h3>
+                <section class="download-section"></section>
+   
+                <button class= "button"onclick="downloaddoc()">📄Documentation</button>
+            </section>
+        
+            <script>
+                function downloaddoc() {
+                    const link = document.createElement('a');
+            link.href = 'Usersmanage.pdf'; // Remplacez par le chemin de votre fichier PDF
+            link.download = 'Usersmanage.pdf'; // Nom du fichier téléchargé
+            link.click();
+                }
+            </script>
+                    </div>
+        
+    </section>
+
+    <h2>Versionning</h2>
+    <section class="skills-section">
+        <h1>GitDesktop</h1>
+        <div class="skills-grid">
+            <div class="skill-card">
+              
+            <img src="img/github.png" alt="HTML logo" class="projet-image" onclick="openModal(this)">
+                </div>
+            </div>
+           
+        
+    </section>
+    
+
+
+
+    <h1>Tableau de synthèse</h1>
+    <section class="download-section"></section>
+   
+        <button class= "button"onclick="downloadPDF()">📄Télécharger le tableau de synthèse</button>
+    </section>
+
+    <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'E4.pdf'; // Remplacez par le chemin de votre fichier PDF
+            link.download = 'E4.pdf'; // Nom du fichier téléchargé
+            link.click();
+        }
+    </script>
+    
+    <script>
+        // Script pour l'accordéon
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+
+        // Ouvrir la modale et afficher l'image agrandie
+function openModal(image) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    modal.style.display = "block"; // Afficher la modale
+    modalImg.src = image.src; // L'image dans la modale est la même que l'image cliquée
+    captionText.innerHTML = image.alt; // Afficher le texte alternatif de l'image dans la modale
+}
+
+// Fermer la modale
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none"; // Cacher la modale
+}
+
+    </script>
+    
+    <!-- Modale pour visionner l'image en grand -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+</body>
+</html>
